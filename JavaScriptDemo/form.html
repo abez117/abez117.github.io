@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tax Calculation</title>
+        <script>
+            // Define a function.
+            function calculateTax() {
+                // Step 1: Get the purchase amount entered by the user
+                var amount = parseFloat(document.getElementById("amount").value);
+
+                // Step 2: Check for invalid input
+                if (isNaN(amount) || amount < 0) {
+                    alert("Please enter a valid purchase amount.");
+                    return;
+                }
+
+                // Step 3: Define the tax rate
+                var taxRate = 0.0825;
+
+                // Step 4: Calculate tax and total
+                var tax = amount * taxRate;
+                var total = amount + tax;
+
+                // Step 5: Display results
+                document.getElementById("tax").value = tax.toFixed(2);
+                document.getElementById("total").value = total.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Tax Calculation</h2>
+
+        <form>
+            <label for="amount">Purchase Amount:</label><br>
+            <input type="text" id="amount" name="amount"><br>
+
+            <label for="tax">Tax (8.25%):</label><br>
+            <input type="text" id="tax" name="tax" disabled><br>
+
+            <label for="total">Total Amount:</label><br>
+            <input type="text" id="total" name="total" disabled><br><br>
+
+            <input type="button" value="Click Here to Calculate" onclick="calculateTax()">
+        </form>
+    </body>
+</html>
