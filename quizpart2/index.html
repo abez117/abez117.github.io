@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Part 2</title>
+    </head>
+    <body>
+
+        <h2>Highest score gets tickets to Krypton!</h2>
+
+        <p>1. Which DC Character was raised in Smallville:</p>
+        <form>
+            <input type="radio" id="batman" name="q1" value="Batman">
+            <label for="batman">Batman</label><br>
+            <input type="radio" id="superman" name="q1" value="Superman">
+            <label for="superman">Superman</label><br>
+            <input type="radio" id="wolverine" name="q1" value="Wolverine">
+            <label for="wolverine">Wolverine</label><br>
+            <input type="radio" id="flash" name="q1" value="Flash">
+            <label for="flash">Flash</label><br>
+        </form>
+
+        <p>2. What did Iron Man say before snapping his fingers at the end of Endgame:</p>
+        <form>
+            <input type="radio" id="jeff" name="q2" value="My name Jeff">
+            <label for="jeff">My name Jeff</label><br>
+            <input type="radio" id="kal" name="q2" value="I am Kal-El of Krypton">
+            <label for="kal">I am Kal-El of Krypton</label><br>
+            <input type="radio" id="max" name="q2" value="My name is Maximus Decimus Meridius">
+            <label for="max">My name is Maximus Decimus Meridius</label><br>
+            <input type="radio" id="iron" name="q2" value="I am Iron Man">
+            <label for="iron">I am Iron Man</label><br>
+        </form>
+
+        <p>3. Who is the main antagonist in Terminator 2:</p>
+        <form>
+            <input type="radio" id="t1000" name="q3" value="T-1000">
+            <label for="t1000">T-1000</label><br>
+            <input type="radio" id="t600" name="q3" value="T-600">
+            <label for="t600">T-600</label><br>
+            <input type="radio" id="t800" name="q3" value="T-800">
+            <label for="t800">T-800</label><br>
+            <input type="radio" id="jc" name="q3" value="John Connor">
+            <label for="jc">John Connor</label><br>
+        </form>
+
+        <p>4. Choose 3 morals which superheros stand for:</p>
+        <form>
+            <input type="checkbox" id="morals_hope" name="q4" value="Hope">
+            <label for="morals_hope">Hope</label><br>
+            <input type="checkbox" id="morals_courage" name="q4" value="Courage">
+            <label for="morals_courage">Courage</label><br>
+            <input type="checkbox" id="morals_justice" name="q4" value="Justice">
+            <label for="morals_justice">Justice</label><br>
+            <input type="checkbox" id="morals_fear" name="q4" value="Fear">
+            <label for="morals_fear">Fear</label><br>
+        </form> 
+
+
+        <p>5. Superman is thought to be invulerable but he does have weaknesses, choose a everyweakness Supeman has:</p>
+        </p>
+        <form>
+            <input type="checkbox" id="weakness_kryptonite" name="q5" value="Kryptonite">
+            <label for="weakness_kryptonite">Kryptonite</label><br>
+            <input type="checkbox" id="weakness_magic" name="q5" value="Magic">
+            <label for="weakness_magic">Magic</label><br>
+            <input type="checkbox" id="weakness_redsolar" name="q5" value="Red Solar Energy">
+            <label for="weakness_redsolar">Red Solar Energy</label><br>
+        </form>
+        <button type="button" onclick="checkAnswers()">Submit Answers</button>
+          
+        <div id="result"></div>
+    </body>
+</html>
