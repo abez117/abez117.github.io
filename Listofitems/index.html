@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My 10 Favorite Items</title>
+    <style>
+        body {
+            background-image: url("images/comicbooks.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #c4c4c4;
+            text-align: center;
+        }
+        li {
+            background: #ffffff;
+            margin: 8px auto;
+            width: 300px;
+            border-radius: 8px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1 style="background-color: rgba(0, 0, 0, 0.6); color: white; padding: 10px; display: inline-block;"> My 10 Favorite Things</h1>
+    <ul id="favList"></ul>
+
+    <script>
+        // Array
+        const fav = [
+            "Major Chip Hazard figure",
+            "Death of Superman Comic Book",
+            "Terminator 1 & 2 VHS Bundle",
+            "Smallville Season 1 - 10",
+            "Terminator Comic Books",
+            "Green Stone from Cancun",
+            "Laptop",
+            "Yu-Gi-Oh Cards",
+            "Pictures",
+            "Dog Tag Neckless"
+        ];
+
+        const list = document.getElementById("favList");
+
+        // Loop 
+        for (let i = 0; i < fav.length; i++) {
+            let item = document.createElement("li");
+            item.textContent = (i + 1) + ". " + fav[i];
+            list.appendChild(item);
+        }
+    </script>
+
+</body>
+</html>
