@@ -1,0 +1,22 @@
+th, td, table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 24px;
+
+}
+
+body {
+    background-color: lightskyblue;
+    text-align: center;
+
+}
+
+table {
+    margin: 0 auto;
+
+}
+
+caption {
+    font-size: 52px;
+    
+}
